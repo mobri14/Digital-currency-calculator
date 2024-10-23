@@ -1,0 +1,98 @@
+:root {
+    --primary-color: lightblue; /* Define primary color */
+    --secondary-color: #4CAF50; /* Define secondary color for the slider thumb */
+    --font-size-large: 20px; /* Define a large font size */
+    --font-size-small: 1.5em; /* Define a smaller font size */
+}
+
+/* Styles for headings */
+h1 {
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Center text alignment */
+.center {
+    text-align: center;
+}
+
+/* Large text styling */
+.lg {
+    margin: 5px; /* Simplified margin */
+    padding: 5px; /* Simplified padding */
+    font-size: var(--font-size-large);
+    font-weight: bold;
+}
+
+/* Box styling */
+.box {
+    padding: 1px !important;
+    width: 22% !important;
+    height: 100% !important;
+    font-size: var(--font-size-small);
+    margin: 10px;
+}
+
+/* Center container for layout */
+.center-container {
+    display: flex; /* Use Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    margin: auto;
+    padding: 20px; /* Add padding for better spacing */
+    width: 80%;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+/* Form styling */
+form {
+    padding: 10px !important;
+    margin: auto;
+    width: 90%;
+    height: 80%;
+}
+
+/* Background color for the body */
+body {
+    background-color: #f9fbff;
+}
+
+/* Slider container styling */
+.slidecontainer {
+    width: 100%; /* Full width for the slider container */
+}
+
+/* Slider styling */
+.slider {
+    -webkit-appearance: none; /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width slider */
+    height: 25px; /* Slider height */
+    background: var(--primary-color); /* Slider background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set initial transparency */
+    transition: opacity .2s; /* Smooth transition on hover */
+}
+
+/* Slider hover effect */
+.slider:hover {
+    opacity: 1; /* Fully visible on hover */
+}
+
+/* Slider thumb styling for Webkit browsers */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Thumb width */
+    height: 25px; /* Thumb height */
+    background: var(--secondary-color); /* Thumb background */
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* Slider thumb styling for Mozilla browsers */
+.slider::-moz-range-thumb {
+    width: 25px; /* Thumb width */
+    height: 25px; /* Thumb height */
+    background: var(--secondary-color); /* Thumb background */
+    cursor: pointer; /* Pointer on hover */
+}

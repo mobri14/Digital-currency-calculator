@@ -1,0 +1,21 @@
+{
+    "name": "crypto-calculator",
+    "version": "1.0.0",
+    "description": "A simple cryptocurrency calculator for converting between fiat and crypto currencies.",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "webpack --config webpack.config.js"
+    },
+    "author": "Mohammad Hassan Jafari",
+    "license": "ISC",
+    "dependencies": {
+      "axios": "^0.21.1",
+      "express": "^4.17.1"
+    },
+    "devDependencies": {
+      "webpack": "^5.0.0",
+      "webpack-cli": "^4.0.0"
+    }
+}
